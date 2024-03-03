@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-18 05:52:05 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTg7IjA1OjQyOjM3ICI7MjUyMg=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTg7IjA1OjUyOjA1ICI7MjsyNjI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="reais, dolares" type="Real" array="False" size=""/>
+            <output expression="&quot;Quantos Reais eu tenho ?:&quot;" newline="True"/>
+            <input variable="reais"/>
+            <assign variable="dolares" expression="(reais/5.16)"/>
+            <output expression="&quot;Ent&#227;o eu posso ter US$&quot; &amp;dolares" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

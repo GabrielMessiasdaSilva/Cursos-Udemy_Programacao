@@ -1,0 +1,1 @@
+var Objeto = Array ('Cadeira','Impressora','Garfo')

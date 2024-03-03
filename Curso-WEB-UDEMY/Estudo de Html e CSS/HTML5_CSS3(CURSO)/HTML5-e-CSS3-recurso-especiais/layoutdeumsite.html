@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout de um site</title>
+    <style>
+        .header {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 20px;
+            border: 5px solid #333;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /*Navbar Links*/
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        /*O layout nesta seção geralmente depende dos usuários-alvo. O layout mais comum é um (ou uma combinação deles) dos seguintes:
+
+1 coluna (geralmente usada para navegadores móveis)
+2 colunas (geralmente usado para tablets e laptops)
+Layout de 3 colunas (usado apenas para desktops)*/
+
+        /*Vamos criar um layout de 3 colunas e alterá-lo para um layout de 1 coluna em telas menores:*/
+
+        .column {
+            float: left;
+          
+        }
+        .column.side{
+            width: 25%;
+        }
+        .column.middle{
+            width: 50%;
+        }
+
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and(max-width:600px) {
+            .column.side,column.middle {
+                width: 100%;
+            }
+        }
+        .footer{
+     
+         border: 2px solid #333;
+            background-color:#f1f1f1;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">header</header>
+    <nav class="topnav">
+        <a href="">Home</a>
+        <a href="">Produtos</a>
+        <a href="">Sobre</a>
+        <a href="">Contato</a>
+    </nav>
+    <div class="row">
+        <div class="column">
+            <h2>Column</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+           </div>
+             
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+</div>
+
+<footer class="footer">
+    &copy;Gabriel Messias
+</footer>
+
+</body>
+
+</html>

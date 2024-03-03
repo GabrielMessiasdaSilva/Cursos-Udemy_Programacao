@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-18 06:46:41 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTg7IjA2OjA5OjM4ICI7MjUyNw=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTg7IjA2OjQ2OjQxICI7MzsyNjMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="emprestimo, juros, valor, parcelas" type="Real" array="False" size=""/>
+            <output expression="&quot;Qual o valor do emprestimo?&quot;" newline="True"/>
+            <input variable="emprestimo"/>
+            <assign variable="juros" expression="(emprestimo*20)/100"/>
+            <output expression="&quot;Voc&#234; pegar&#225; de emprestimo: &quot; &amp;emprestimo&amp; &quot; mais o valor do juros que ser&#225; de: &quot; &amp;juros" newline="False"/>
+            <output expression="&quot;Digite o valor de parcela que vc deseja &quot;" newline="True"/>
+            <input variable="parcelas"/>
+            <assign variable="emprestimo" expression="juros-parcelas"/>
+            <output expression="&quot;sua parcela ser&#225; de&quot;&amp; parcelas" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

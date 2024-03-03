@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-24 11:09:55 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjQ7IjExOjA0OjIxICI7MjUwNw=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjQ7IjExOjA5OjU1ICI7MTsyNjI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="CONT, V" type="Integer" array="False" size=""/>
+            <output expression="&quot;DIGITE UM VALOR&quot;" newline="True"/>
+            <input variable="V"/>
+            <if expression="(V%2=1)">
+                <then>
+                    <assign variable="V" expression="V-1"/>
+                </then>
+                <else/>
+            </if>
+            <for variable="CONT" start="V" end="0" direction="inc" step="1">
+                <output expression="CONT" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

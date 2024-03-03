@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-18 06:09:37 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTg7IjA2OjAzOjE1ICI7MjUxNg=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTg7IjA2OjA5OjM3ICI7MjsyNjM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="imposto, preco" type="Real" array="False" size=""/>
+            <output expression="&quot;Qual &#233; o valor do produto?:&quot;" newline="True"/>
+            <input variable="preco"/>
+            <assign variable="imposto" expression="(preco*60)/100"/>
+            <output expression="&quot;O imposto cobrado aqui no aeroporto ser&#225; de U$:  &quot;&amp;imposto" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>FlexBox-Flexive Box Layout 1</title>
+    <meta charset="uft-8">
+    <style type="text/css">
+        #conteudo {
+            background: #dcdcdc;
+            /*largura*/
+            height: 600px;
+            /*altura*/
+            display: flex;
+
+         /*   flex-direction: row;
+            /*valores da propriedade flex-direction:row | row-reverse | column | column-reverse 
+
+
+            flex-wrap: wrap;
+            /*propriedade do flex-wrap : nowrap|wrap|wrap-reverse
+
+            justify-content: flex-start;
+            /*propriedades do justify-content:flex-start | flex-end| center | space-between | space-around faz a distribução de um conteúdo 
+           
+           
+            align-items: center ;
+            /*Propriedade do align-items: Stretch | center | flex-start |flex-end |baseline */
+
+        }
+
+        .item {
+            width:200px;
+            height: 100px;
+            margin: 10px;
+            background: white;
+            border: 1px solid gray;
+            margin: 10px;
+            flex-grow:0;/*Define a proporção de espaço ocupado por um item,o padrão é zero*/
+            flex-shrink: 1;/*Define a capacidade de redução de tamanho do item*/
+            flex-basis: 200px;/*Indica o tamanho inicial do flex item antes da distribuição do espaço restante */
+        }
+        .item1{
+           
+           flex-shrink: 1;
+           
+            /*
+        flex-grow: 1;quando colocamos o valor 1,todos tenta ocupar todo os espaçamento*/
+        }
+
+        .item2{
+            flex-shrink: 2;
+
+            flex-grow: 1;/*quando colocamos o valor 2,ele tem o dobro do tamanho,todos tenta ocupar todo os espaçamento*/
+        }
+        .item3{
+            flex-shrink: 3;
+        }
+        /*
+        .ordem1{
+            order:1;
+        }
+        .ordem2{
+            order:2;
+        }
+        .ordem3{
+            order:3;
+        }
+        .ordem4{
+            order:4;
+        }
+       */
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox Itens-Parte 1</h1>
+    <div id="conteudo">
+        <div class="item item1">01</div>
+        <div class="item item2">02</div>
+        <div class="item item3">03</div>
+        <div class="item ordem2">04</div>
+        <!--Com os itens ordem,podemos fazer a alteração da ordem-->
+      
+    </div>
+</body>
+
+</html>

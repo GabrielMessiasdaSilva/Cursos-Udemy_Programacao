@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex; /* Define o contêiner pai como um flex container */
+      flex-wrap: wrap; /* Permite que os flex items quebrem em várias linhas caso necessário */
+      margin: 3px; /* Margem de 3px para o contêiner pai */
+      flex: 1 1 100vw; /* O contêiner pai ocupa 100% da largura da janela do navegador */
+    }
+
+    header, nav, main, aside, footer {
+      background-color: gray; /* Define a cor de fundo dos elementos */
+      display: flex; /* Define os elementos como flex items */
+      margin: 3px; /* Margem de 3px para os elementos */
+    }
+
+    header{
+        flex: 2 1 100vw; /* O cabeçalho ocupa 2 partes de espaço disponível */
+        height: 100px; /* Define a altura do cabeçalho como 100px */
+    }
+
+   nav{
+    flex: 1 1 200px; /* O menu ocupa 1 parte de espaço disponível */
+    }
+
+    main{
+        flex: 20 1 500px; /* A seção principal ocupa 20 partes de espaço disponível */
+        height: calc(100vh -225px); /* Define a altura da seção principal */
+    }
+    aside{
+        flex: 1 1 200px; /* O conteúdo lateral ocupa 1 parte de espaço disponível */
+    }
+    footer{
+        flex: 1 1 100vw; /* O rodapé ocupa 1 parte de espaço disponível */
+        height: 100px; /* Define a altura do rodapé como 100px */
+    }
+    img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+    @media only screen and (max-width:923px) {
+        main{
+            height: calc(100vh-330px);
+        }
+        
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+
+  </header>
+
+  <nav>Menu</nav>
+  <main>Principal</main>
+  <aside>Conteudo</aside>
+  <footer>rodapé</footer>
+</body>
+
+</html>
+
+
+
+<!--display: flex;: Essa propriedade é aplicada ao contêiner pai e define que ele será um flex container. Os elementos filhos diretos do contêiner serão automaticamente tratados como flex items.
+
+flex-direction: Essa propriedade define a direção principal do fluxo dos flex items dentro do contêiner. Os valores possíveis são:
+
+row (padrão): Os flex items são posicionados na mesma direção do texto, da esquerda para a direita.
+row-reverse: Os flex items são posicionados na direção oposta ao texto, da direita para a esquerda.
+column: Os flex items são posicionados verticalmente de cima para baixo.
+column-reverse: Os flex items são posicionados verticalmente de baixo para cima.
+justify-content: Essa propriedade define como os flex items são distribuídos ao longo do eixo principal. Ela controla o alinhamento horizontal dos itens. Alguns valores comuns são:
+
+flex-start (padrão): Os flex items são alinhados no início do contêiner.
+flex-end: Os flex items são alinhados no final do contêiner.
+center: Os flex items são centralizados horizontalmente.
+space-between: Os flex items são distribuídos igualmente com espaçamento entre eles.
+space-around: Os flex items são distribuídos igualmente com espaçamento em torno deles.
+align-items: Essa propriedade define como os flex items são alinhados ao longo do eixo transversal. Ela controla o alinhamento vertical dos itens. Alguns valores comuns são:
+
+stretch (padrão): Os flex items são esticados para preencher a altura do contêiner.
+flex-start: Os flex items são alinhados no início do contêiner no eixo transversal.
+flex-end: Os flex items são alinhados no final do contêiner no eixo transversal.
+center: Os flex items são centralizados verticalmente.
+baseline: Os flex items são alinhados pela linha de base (baseline) do texto.
+flex-wrap: Essa propriedade controla se os flex items devem quebrar ou não em várias linhas caso não caibam no contêiner pai. Alguns valores possíveis são:
+
+nowrap (padrão): Os flex items são forçados a permanecerem em uma única linha.
+wrap: Os flex items são quebrados em linhas adicionais, se necessário.
+wrap-reverse: Os flex items são quebrados em linhas adicionais, mas em ordem reversa.-->

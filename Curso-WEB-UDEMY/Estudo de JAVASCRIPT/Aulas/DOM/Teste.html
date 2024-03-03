@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras com Modal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Minha Loja</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="cart-icon" data-toggle="modal" data-target="#cartModal">
+                                <img src="cart-icon.png" alt="Carrinho de Compras">
+                                <span class="badge badge-danger cart-counter">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="product">
+                    <h2>Produto 1</h2>
+                    <img src="product1.jpg" alt="Produto 1">
+                    <p>Preço: $10</p>
+                    <button class="btn btn-primary" onclick="addToCart('Produto 1', 10, 'product1.jpg')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="product">
+                    <h2>Produto 2</h2>
+                    <img src="product2.jpg" alt="Produto 2">
+                    <p>Preço: $20</p>
+                    <button class="btn btn-primary" onclick="addToCart('Produto 2', 20, 'product2.jpg')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal do Carrinho de Compras -->
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Carrinho de Compras</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Itens do carrinho serão exibidos aqui -->
+                    <div id="cart" class="cart-content"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script >
+ // Inicialização do carrinho vazio
+let cart = [];
+let total = 0;
+
+// Função para adicionar um item ao carrinho
+function addToCart(productName, price, image) {
+    const item = { name: productName, price: price, image: image };
+    cart.push(item);
+    updateCart();
+}
+
+// Função para calcular o preço total
+function calculateTotal() {
+    total = cart.reduce((acc, item) => acc + item.price, 0);
+    return total.toFixed(2);
+}
+
+// Função para atualizar a exibição do carrinho
+function updateCart() {
+    const cartContent = document.querySelector('.cart-content');
+    cartContent.innerHTML = ''; // Limpa o conteúdo antes de atualizá-lo
+
+    cart.forEach(item => {
+        const cartItem = document.createElement('div');
+        cartItem.classList.add('cart-item');
+        cartItem.innerHTML = `
+            <div class="cart-item-image">
+                <img src="${item.image}" alt="${item.name}">
+            </div>
+            <div class="cart-item-details">
+                <p>${item.name}</p>
+                <p>$${item.price.toFixed(2)}</p>
+            </div>
+        `;
+        cartContent.appendChild(cartItem);
+    });
+
+    const totalElement = document.getElementById('cart-total');
+    totalElement.textContent = `$${calculateTotal()}`;
+
+    const cartCounter = document.querySelector('.cart-counter');
+    cartCounter.textContent = cart.length;
+}
+
+// Função para exibir/ocultar o carrinho
+function toggleCart() {
+    updateCart(); // Atualiza o carrinho antes de exibi-lo
+
+    // Exibe o modal do carrinho
+    $('#cartModal').modal('show');
+}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menus Dropdonws</title>
+</head>
+
+<style>
+    .dropdown{
+position: relative;
+display: inline-block;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index:1;
+    }
+</style>
+<body>
+    <h2>Menu Suspenso</h2>
+    <p>Mova o mouse sobre o texto abaixo para abrir o conteúdo suspenso.</p>
+
+    <div class="dropdown">
+        <span>Passe o Mouse em mim</span>
+        <div class="dropdown-content">
+        <p>Olá Mundo</p>
+       </div>
+    </div>
+</body>
+</html>

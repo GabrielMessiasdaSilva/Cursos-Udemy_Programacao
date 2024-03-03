@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranformação 2D</title>
+    <style>
+#dv1{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+ /*   transform: translate( 300px, 200px);/*Esaa propriedade faz a translação de um elemento,não confunda o trasnlate com o posicionamento*/
+
+ 
+    transform:rotate(45deg);/*fazemos a transformação rotacionando um elemento/////
+
+    transform:scale(0.5)  translate( 300px, 200px);/*dobramos o elemnto de tamanho,para usar o scale e o translate devemos colocar juntos///
+
+    transform:skewX(20deg);/*fazemos a inclinação,quanto maior o valor mais iclinado ele vai ficar//
+
+    transform:skewy(45deg);/*ele inclina na vertical,e faz o mesmo qeu o///
+    transform:matrix(1,0.5,0,1,0,2);/*a propriedade matriz permite que nós façamos todas as transformçãoes nela usando somente um código  transform:matrix(scaleX,skewyY,skewX,scaleyY,translateX,translateY);*/
+
+    transform-origin: 100% 100%;/*definimos a origem da transformação,e mantem o ponto de origem fica fixo*/
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <div id="dv1">Cfb</div>
+
+</body>
+
+</html>

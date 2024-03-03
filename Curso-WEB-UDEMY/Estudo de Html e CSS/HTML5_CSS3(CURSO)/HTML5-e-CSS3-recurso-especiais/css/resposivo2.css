@@ -1,0 +1,57 @@
+body {
+    background: rgb(226, 193, 144);
+}
+
+nav {
+    width: 200px;
+    float: left;
+}
+
+nav ul {
+    margin: 1px;
+    padding: 1px;
+}
+
+nav li {
+    background: #ccc;
+    color: #fff;
+    border: #111a49 solid 2px;
+    border-radius: 3px;
+    list-style-type: none;
+    margin: 4px;
+    padding: 2px;
+}
+
+article {
+    margin-left: 216px;
+}
+
+@media screen and (min-width:0px) and (max-width:480px)
+
+/*estamos fazendo a configuração de telas para smartfones*/
+    {
+    nav {
+        width: 100%;
+    }
+
+    article {
+        margin-left: 3px;
+    }
+
+    article p {
+        text-align: justify;
+    }
+
+    nav li {
+        font-size:20px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:800) {
+
+    
+     
+    nav li{
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-22 06:00:31 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjI7IjA0OjU3OjQxICI7MjUxNw=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjI7IjA2OjAwOjMxICI7MTsyNjE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sim, nao" type="Integer" array="False" size=""/>
+            <declare name="resposta" type="String" array="False" size=""/>
+            <assign variable="sim" expression="0"/>
+            <do expression="resposta=&quot;sim&quot;">
+                <output expression="&quot;Digite o valor ==&gt;&quot;" newline="True"/>
+                <input variable="nao"/>
+                <assign variable="sim" expression="sim+nao"/>
+                <output expression="&quot; vc quer continuar?&quot;" newline="True"/>
+                <input variable="resposta"/>
+            </do>
+            <output expression="&quot;a soma de todos os valores foi&quot;&amp;sim" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

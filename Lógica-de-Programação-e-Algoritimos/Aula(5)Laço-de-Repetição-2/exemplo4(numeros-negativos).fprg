@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-22 06:51:45 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjI7IjA2OjQ3OjAyICI7MjUxNQ=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjI7IjA2OjUxOjQ1ICI7MTsyNjI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, contador, negativo" type="Integer" array="False" size=""/>
+            <assign variable="contador" expression="1"/>
+            <assign variable="negativo" expression="0"/>
+            <do expression="contador&lt;5">
+                <output expression="&quot;Digite um numero&quot;" newline="True"/>
+                <input variable="numero"/>
+                <if expression="numero&lt;0">
+                    <then>
+                        <assign variable="negativo" expression="negativo+1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="contador" expression="contador+1"/>
+                <output expression="&quot;Foram digitados  &quot;&amp;negativo&amp;&quot;  valores negativo&quot;" newline="True"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

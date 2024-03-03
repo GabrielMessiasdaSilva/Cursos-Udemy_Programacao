@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-22 07:21:16 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjI7IjA3OjA0OjUzICI7MjUxNQ=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjI7IjA3OjIxOjE2ICI7MzsyNjIz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="contador, numero, contdiv" type="Integer" array="False" size=""/>
+            <assign variable="contdiv" expression="0"/>
+            <assign variable="contador" expression="1"/>
+            <output expression="&quot;digite um numero&quot;" newline="True"/>
+            <input variable="numero"/>
+            <do expression="contador&lt;=numero">
+                <if expression="numero%contador=0">
+                    <then>
+                        <assign variable="contdiv" expression="contdiv+1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="contador" expression="contador+1"/>
+            </do>
+            <if expression="contdiv&gt;2">
+                <then>
+                    <output expression="&quot;o valor &quot;&amp;numero&amp;&quot; n&#227;o &#233; primo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;o valor &quot;&amp;numero&amp;&quot; &#233; primo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

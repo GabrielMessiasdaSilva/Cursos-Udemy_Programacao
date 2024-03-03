@@ -1,0 +1,48 @@
+/*Seletor universal  Aplica-se em todos os
+elementos no documento,Seleciona todos os elementos da página 
+*{
+    border:1px solid red;
+
+}
+
+*
+
+h1{
+    color:green;
+}
+*/
+/* Seletor de classe*
+.verde{
+    color:green;
+}
+p.verde{
+    color: green;
+}
+*/
+
+/* Seletor de id*/
+/*
+#cabecalho{
+    border: 1px solid blue;
+
+}*/
+
+/******************Seletor de filho
+li>a{
+    color:Blue;
+    text-decoration: overline;
+}
+*/
+/******************Seletor de descendente
+li a{
+    color: aqua;
+}
+/
+/******************Irmãos adjacente
+h1+p{
+    color :red;
+}*/
+/******************Irmãos geral*/
+h1~p{
+    color:blue;
+}

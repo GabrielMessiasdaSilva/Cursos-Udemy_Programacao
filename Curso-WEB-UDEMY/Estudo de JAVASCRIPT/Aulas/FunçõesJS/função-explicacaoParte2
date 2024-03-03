@@ -1,0 +1,18 @@
+var valor = 20
+
+function incrementa() {
+    console.log("estou dentro de uma função")
+
+
+}
+incrementa()// chamamos a função
+console.log(valor)
+
+
+
+
+//outra função com parametros
+function MostrarNome(nomedaPessoa) {
+    console.log(nomedaPessoa)
+}
+console.log("gabriel ")

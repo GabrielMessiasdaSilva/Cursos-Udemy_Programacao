@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-18 05:31:05 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTg7IjA1OjA5OjE0ICI7MjUyMA=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTg7IjA1OjMxOjA1ICI7MjsyNjI0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="L1, L2, L3" type="Real" array="False" size=""/>
+            <declare name="Equilatero, Escaleno, Tri" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro lado :&quot;" newline="True"/>
+            <input variable="L1"/>
+            <output expression="&quot;Digite o segundo lado :&quot;" newline="True"/>
+            <input variable="L2"/>
+            <output expression="&quot;Digite o terceiro lado :&quot;" newline="True"/>
+            <input variable="L3"/>
+            <assign variable="Tri" expression="(L1 &lt;L2+L3)"/>
+            <assign variable="Equilatero" expression="(L1 = L2) and (L2=L3)"/>
+            <assign variable="Escaleno" expression="(L1&lt;&gt;L2) and (L2&lt;&gt;L3) and (L1&lt;&gt;L3)"/>
+            <output expression="&quot;o triagulo &#233; Equilatero ?&quot; &amp;Equilatero" newline="True"/>
+            <output expression="&quot;o triagulo &#233; Equilatero ?&quot; &amp;Escaleno" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

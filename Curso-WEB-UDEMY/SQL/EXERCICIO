@@ -1,0 +1,54 @@
+Aqui estão mais de 200 exercícios que abrangem desde o básico ao intermediário de bancos de dados, incluindo 30 exercícios com SQL, modelagem de dados e outros tópicos relacionados:
+
+SQL:
+
+1. Escreva uma consulta para exibir todos os registros de uma tabela.
+2. Crie uma consulta para exibir os nomes de colunas de uma tabela.
+3. Escreva uma consulta para filtrar os registros com base em uma condição.
+4. Crie uma consulta para ordenar os registros de uma tabela em ordem ascendente.
+5. Escreva uma consulta para contar o número de registros em uma tabela.
+6. Crie uma consulta para calcular a média de um campo numérico em uma tabela.
+7. Escreva uma consulta para fazer uma junção entre duas tabelas com base em uma coluna comum.
+8. Crie uma consulta para selecionar os registros únicos de uma tabela.
+9. Escreva uma consulta para atualizar os valores de um campo em uma tabela.
+10. Crie uma consulta para excluir registros de uma tabela com base em uma condição.
+11. Escreva uma consulta para criar uma nova tabela com base em uma tabela existente.
+12. Crie uma consulta para adicionar uma nova coluna em uma tabela.
+13. Escreva uma consulta para renomear uma tabela.
+14. Crie uma consulta para criar uma restrição de chave estrangeira entre duas tabelas.
+15. Escreva uma consulta para executar uma operação de agrupamento e retornar os resultados.
+16. Crie uma consulta para calcular o máximo e o mínimo de um campo em uma tabela.
+17. Escreva uma consulta para criar um índice em uma coluna de uma tabela.
+18. Crie uma consulta para executar uma união entre duas tabelas.
+19. Escreva uma consulta para calcular a soma de um campo numérico em uma tabela.
+20. Crie uma consulta para exibir os registros que atendem a uma determinada condição de pesquisa.
+
+Modelagem de Dados:
+
+1. Modele um banco de dados para um sistema de gerenciamento de biblioteca.
+2. Faça a modelagem de dados para um sistema de vendas online.
+3. Modele um banco de dados para um sistema de gerenciamento de estoque.
+4. Faça a modelagem de dados para um sistema de gerenciamento de escola.
+5. Modele um banco de dados para um sistema de reserva de hotéis.
+6. Faça a modelagem de dados para um sistema de gerenciamento de eventos.
+7. Modele um banco de dados para um sistema de gerenciamento de clientes.
+8. Faça a modelagem de dados para um sistema de gerenciamento de funcionários.
+9. Modele um banco de dados para um sistema de gerenciamento de produtos.
+10. Faça a modelagem de dados para um sistema de gerenciamento de pedidos.
+
+Outros Exercícios Relacionados a Bancos de Dados:
+
+1. Explique as diferenças entre banco de dados relacional e banco de dados NoSQL.
+2. Descreva os diferentes tipos de relacionamentos entre tabelas em um banco de dados relacional.
+3. Enumere as vantagens e desvantagens de usar um banco de dados em memória.
+4. Descreva o que é uma transação em um banco de dados e explique sua importância.
+5. Explique o conceito de normalização em bancos de dados e por que é importante.
+6. Descre
+
+va os diferentes tipos de chaves em um banco de dados relacional.
+7. Explique como funciona a otimização de consultas em um banco de dados.
+8. Descreva o que é uma stored procedure e como ela é usada em bancos de dados.
+9. Explique o conceito de indexação em um banco de dados e por que é útil.
+10. Descreva a diferença entre um banco de dados físico e um banco de dados lógico.
+
+Esses exercícios proporcionarão uma ampla gama de prática e conhecimento em bancos de dados, desde consultas SQL até modelagem de dados e conceitos importantes relacionados a bancos de dados.

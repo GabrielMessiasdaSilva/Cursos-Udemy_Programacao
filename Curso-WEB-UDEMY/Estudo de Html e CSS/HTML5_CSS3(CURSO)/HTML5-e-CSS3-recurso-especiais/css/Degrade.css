@@ -1,0 +1,18 @@
+#caixa{
+    width:300px;
+    height:300px;
+    /*background:url("../imagens/camera.png");*/
+
+    background:linear-gradient(red,green);/*esse é o código de gradiente,um efeito bastatnte interessante,podemos definir código hexadecimais,podemos definir a direçao do gradienete exemplo:to left,to right,to bottom, ou to top.Podemos definir em grau essa rotação*/
+
+    background:radial-gradient(red,green,yellow)/*aqui é um gradiente radial*/
+}
+
+
+
+
+/*Aqui ultilizamos o código de Tranparencia,usando o rgb os 3 numero la,adicionando mais uma virgula e colocado por exemplo : 0.5
+#caixa h1{
+    background:rgb(255, 255, 255,0.5);
+}
+*/

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <title>Posicionamento(static ,relative,absolute e fixed)</title>
+
+
+    <head>
+        <style type="text/css">
+            body {
+                background: #007fc7;
+            }
+
+            #container {
+                background: white;
+                width: 800px;
+                padding: 10px;
+                margin: 10px auto;
+
+            }
+
+            h1 {
+                position: static;
+            }
+
+            p {
+                width: 200px;
+                position: relative;
+
+            }
+
+            .relative {
+                border: 1px solid red;
+                position: relative;
+            }
+
+            .absolute {
+                border: 1px solid red;
+                background: greenyellow;
+                position: absolute;
+                top: 80px;
+                right: 80px;
+            }
+
+            .fixed {
+                border: 1px solid red;
+                background: rgb(129, 109, 216);
+                position: fixed;
+                top: 0px;
+                left:20px;
+            }
+        </style>
+    </head>
+
+<body>
+
+    <div id="container">
+        <h1>Posicionamento</h1>
+        <p> P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, minus impedit. Reiciendis officia
+            debitis facilis ipsam molestias dolores aliquid aspernatur, non quae, ex incidunt illo impedit a cum ipsa
+            fugiat?</p>
+
+
+        <p class="relative"> P2Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, minus impedit.
+            Reiciendis officia debitis facilis ipsam molestias dolores aliquid aspernatur, non quae, ex incidunt illo
+            impedit a cum ipsa fugiat?</p>
+
+        <p class="absolute"> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, minus impedit. Reiciendis officia
+            debitis facilis ipsam molestias dolores aliquid aspernatur, non quae, ex incidunt illo impedit a cum ipsa
+            fugiat?</p>
+
+
+            <p class="fixed"> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, minus impedit. Reiciendis officia
+                debitis facilis ipsam molestias dolores aliquid aspernatur, non quae, ex incidunt illo impedit a cum ipsa
+                fugiat?</p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde vel sunt corrupti quasi recusandae temporibus iure placeat dicta aut, id rem vitae obcaecati eum minus nulla provident atque pariatur accusantium?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde vel sunt corrupti quasi recusandae temporibus iure placeat dicta aut, id rem vitae obcaecati eum minus nulla provident atque pariatur accusantium?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde vel sunt corrupti quasi recusandae temporibus iure placeat dicta aut, id rem vitae obcaecati eum minus nulla provident atque pariatur accusantium?</p>   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde vel sunt corrupti quasi recusandae temporibus iure placeat dicta aut, id rem vitae obcaecati eum minus nulla provident atque pariatur accusantium?</p>
+    </div>
+</body>
+
+</html>

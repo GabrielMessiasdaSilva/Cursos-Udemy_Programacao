@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-20 06:55:47 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjA7IjA2OjI0OjM1ICI7MjUxNA=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjA7IjA2OjU1OjQ3ICI7MjsyNjMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="D, VALOR" type="Integer" array="False" size=""/>
+            <output expression="&quot;-----------------------------&quot;" newline="True"/>
+            <output expression="&quot;CRIAN&#199;A ESPERAN&#199;A&quot;" newline="True"/>
+            <output expression="&quot;-----------------------------&quot;" newline="True"/>
+            <output expression="&quot;[1] PARA DOAR R$10&quot;" newline="True"/>
+            <output expression="&quot;[2] PARA DOAR R$25&quot;" newline="True"/>
+            <output expression="&quot;[3] PARA DOAR R$50&quot;" newline="True"/>
+            <output expression="&quot;[4] PARA DOAR OUTROS VALORES&quot;" newline="True"/>
+            <output expression="&quot;[5] CANCELAR&quot;" newline="True"/>
+            <input variable="D"/>
+            <comment text="O DE BAIXO &#201; O ESCOLHA "/>
+        </body>
+    </function>
+</flowgorithm>

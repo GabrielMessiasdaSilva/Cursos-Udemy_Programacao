@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar Resposiva</title>
+    <style>
+nav {
+  background-color: transparent;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav ol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ol li {
+  margin: 0 10px;
+}
+
+nav ol li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+nav {
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-blur: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  nav ol {
+    flex-direction: column;
+  }
+
+  nav ol li {
+    margin: 10px 0;
+  }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ol>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ol>
+      </nav>
+      
+      
+</body>
+</html>

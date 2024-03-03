@@ -1,0 +1,45 @@
+# Inicialização e Configuração
+git init  # Iniciar um novo repositório
+git clone <url>  # Clonar um repositório remoto
+git config --global <nome_configuração> <valor>  # Configurações globais do Git
+git config --local <nome_configuração> <valor>  # Configurações locais do Git
+
+# Operações de Arquivo
+git status  # Verificar o estado dos arquivos
+git add <file(s)>  # Adicionar arquivos ao stage
+git rm <file(s)>  # Remover arquivos
+git commit -m "mensagem"  # Confirmar mudanças
+
+# Ramificação e Fusão
+git branch  # Listar ramificações
+git checkout <branch_name>  # Mudar para uma ramificação
+git merge <branch_name>  # Fundir ramificações
+
+# Repositórios Remotos
+git remote  # Listar repositórios remotos
+git push <remote_name> <branch>  # Enviar mudanças
+git pull <remote_name> <branch>  # Obter mudanças
+
+# Histórico de Confirmações
+git log  # Ver histórico de commits
+git tag  # Gerenciar tags
+
+# Outras Funcionalidades
+git stash  # Salvar alterações temporariamente
+git cherry-pick <commit_id>  # Aplicar um commit específico
+
+# Gerenciamento de Commit
+git commit --amend  # Modificar o último commit
+git reset --hard <commit_id>  # Desfazer mudanças
+
+# Dicas e Truques
+git add -p  # Adicionar partes específicas de um arquivo
+git log --grep="<text>"  # Procurar texto em mensagens de commit
+
+# Problemas e Depuração
+git bisect  # Encontrar onde um bug foi introduzido
+git fsck  # Verificar integridade do repositório
+
+# Colaboração
+git request-pull <start_commit> <end_commit> <url>  # Gerar resumo para solicitação de mudanças
+git shortlog  # Resumo do histórico de commits por autor

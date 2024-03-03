@@ -1,0 +1,29 @@
+/* MOdelo de caixa*/
+
+.conteudo{
+  background: url(./img/fundo.png) ;/*Exemplo com imagens*/
+
+
+  /*  padding-top: 20px; Espaçamento superior interno
+   
+    padding-right: 20px; //Temos um espaçamento direto da caixa
+
+
+    padding-bottom: 20px;// Temos o espaçamento inferior interno.
+
+
+    padding-left: 20px; //temos o espaçamento esquerdo interno 
+
+   
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;*/
+    padding:20px;
+
+
+    margin:40px;/*Espaçamento externo*/
+
+
+    width: 150px;/*TAMANHO DA CAIXA*/
+}

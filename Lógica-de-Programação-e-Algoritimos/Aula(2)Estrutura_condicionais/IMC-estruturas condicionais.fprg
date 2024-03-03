@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-19 04:06:34 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTk7IjAzOjU5OjExICI7MjUyMQ=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTk7IjA0OjA2OjM0ICI7MjsyNjI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="M, A, IMC" type="Real" array="False" size=""/>
+            <output expression="&quot; Digite o seu peso (Kg)&quot;" newline="True"/>
+            <input variable="M"/>
+            <output expression="&quot;Digite a sua altura (metros):&quot;" newline="True"/>
+            <input variable="A"/>
+            <assign variable="IMC" expression="M/(A^2)"/>
+            <output expression="&quot;IMC&quot;&amp;IMC" newline="True"/>
+            <if expression="(IMC&gt;=18.5) and (IMC&lt;25)">
+                <then>
+                    <output expression="&quot;Parabens vc esta no seu peso ideal&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;vc n&#227;o est&#225; no peso ideal&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

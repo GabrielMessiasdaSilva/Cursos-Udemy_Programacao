@@ -1,0 +1,82 @@
+/* Define uma animação chamada "animacao-caixa" */
+@keyframes animacao-caixa{
+    /* Define o estado inicial da animação */
+    from {
+        background: red;
+    }
+    /* Define o estado final da animação */
+    to {
+        background: rgb(10, 116, 158);
+    }
+}
+
+/* Define um elemento com ID "caixa" que será animado */
+#caixa {
+    /* Define o tamanho e a cor de fundo da "caixa" */
+    width: 300px;
+    height: 300px;
+    background: red;
+
+    /* Define a animação que será aplicada na "caixa" */
+    animation-name: animacao-caixa;
+
+    /* Define a duração da animação */
+    animation-duration: 3s;
+/* Define um atraso para o início da animação */
+   
+    animation-delay: 3s;
+    /* Define quantas vezes a animação deve se repetir */
+    animation-iteration-count: 2;
+    /* Define a direção da animação */
+    animation-direction: alternate;
+    /* Define a direção da animação para navegadores Webkit */
+    -webkit-animation-direction: reverse;
+}
+
+/* Define uma animação chamada "minha-animação" */
+@keyframes minha-animação{
+    /* Define o estado inicial da animação */
+    from {
+        background: blue;
+        border-radius: 0px;
+        left: 0;
+        right: 0;
+    }
+    /* Define o estado final da animação */
+    to {
+        background: rgb(214, 162, 19);
+        border-radius: 200px;
+        left: 200px;
+        right: 200px;
+    }
+}
+
+/* Define um elemento com a classe "minha-animação" que será animado */
+.minha-animação {
+    /* Define o tamanho e a cor de fundo do elemento */
+    width: 300px;
+    height: 300px;
+    background: blue;
+    /* Define a animação que será aplicada no elemento */
+    animation: minha-animação 5s 4s 2 alternate;
+}
+
+/* Define uma animação chamada "conteudo" */
+@keyframes conteudo {
+    /* Define o estado inicial da animação */
+    0% {
+        opacity: 0;
+    }
+    /* Define o estado final da animação */
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Define um elemento com a classe "animacao" que terá sua opacidade animada */
+.animacao {
+    /* Define a animação que será aplicada na classe "animacao" */
+    animation-name: conteudo;
+    /* Define a duração da animação */
+    animation-duration: 3s;
+}

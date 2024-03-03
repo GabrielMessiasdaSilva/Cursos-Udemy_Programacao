@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-24 08:42:33 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjQ7IjExOjE2OjQ3ICI7MjUxOA=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjQ7IjA4OjQyOjMzICI7NDsyNjI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="C, V, SIMP, TOT010" type="Integer" array="False" size=""/>
+            <assign variable="TOT010" expression="0"/>
+            <assign variable="SIMP" expression="0"/>
+            <for variable="C" start="1" end="6" direction="inc" step="1">
+                <output expression="&quot;DIGITE UM VALOR&quot;" newline="True"/>
+                <input variable="V"/>
+                <if expression="(V&lt;=10)and(V&gt;=10)">
+                    <then>
+                        <assign variable="TOT010" expression="TOT010+1"/>
+                    </then>
+                    <else>
+                        <if expression="(V%2=1)">
+                            <then>
+                                <assign variable="SIMP" expression="SIMP+V"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;AO TODO FORAM &quot;&amp;TOT010&amp; &quot; VALORES ENTRE 0 E 10&quot;" newline="True"/>
+            <output expression="&quot;Nesse Intervalo,a soma de impares foi&quot;&amp;SIMP" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

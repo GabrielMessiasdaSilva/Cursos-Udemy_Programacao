@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <style>
+        body{
+            background: #000;
+        }
+        img{
+            filter: drop-shadow(20px 20px 35px #128686);
+            /*o drop-shadow faz uma sombra projetada do elemento  e temos que usar do seguinte modo :   filter: drop-shadow(distX,distY,tam,cor);  */
+
+            filter: hue-rotate(45deg);/*fazemos a matiz*/;
+
+            filter:invert(0);/*ele faz a inversão das cores*/
+
+            filter:opacity(100%);/*esse filtro faz a opacidade ou tranaparencia,ele trabalha com porcentegem*/
+
+            filter:saturate(300%)/*esse filtro contola a saturaçao,quanto mais forte é a saturação,mais forte ficara as cores ou seja ficara bem ressaltadas,trabalhamos com porcentegem tbm*/;
+
+            filter:sepia(30%);/*O sepia faz um efeito de envelhecimento,e ele trabalha com porcetagem tbm*/
+        }
+    </style>
+</head>
+<body>
+    <img src="Imagens/camera.png" alt="camera">
+    
+</body>
+</html>
