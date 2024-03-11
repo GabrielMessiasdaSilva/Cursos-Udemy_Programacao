@@ -3,16 +3,16 @@
 <title>Página tabuada2.php</title>
 </head>
 <body>
-    <?php
+<?php
     $i=0;
    
-    do($i<=10){
+    do {
         $tab=2*$i;
-        echo 2.'X'.$i.'='$tab.
-        '<br>';
+        echo '2 X '.$i.' = '.$tab.'<br>';
         $i++;
-    }while($i<-10);
+    } while($i<=10);
 ?>
+
 
 </body>
 </html>
