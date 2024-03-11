@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manipulação de Datas</title>
+    <style>
+        table{
+            border: 1px;
+          
+        }
+      
+    </style>
+</head>
+<body>
+
+<table >
+    <tr>
+        <th>Método</th>
+        <th>Retorna</th>
+        <th>Descrição</th>
+    </tr>
+    <tr>
+        <td>data.getDate()</td>
+        <td>1-31</td>
+        <td>Retorna o dia do mês.</td>
+    </tr>
+    <tr>
+        <td>data.getMonth() + 1</td>
+        <td>1-12</td>
+        <td>Retorna o mês (adicionar 1, pois vai de 0 a 11).</td>
+    </tr>
+    <tr>
+        <td>data.getFullYear()</td>
+        <td>4 dígitos</td>
+        <td>Retorna o ano completo.</td>
+    </tr>
+    <tr>
+        <td>data.getHours()</td>
+        <td>0-23</td>
+        <td>Retorna a hora do dia.</td>
+    </tr>
+    <tr>
+        <td>data.getMinutes()</td>
+        <td>0-59</td>
+        <td>Retorna os minutos da hora.</td>
+    </tr>
+    <tr>
+        <td>data.getSeconds()</td>
+        <td>0-59</td>
+        <td>Retorna os segundos do minuto.</td>
+    </tr>
+    <tr>
+        <td>data.getMilliseconds()</td>
+        <td>0-999</td>
+        <td>Retorna os milissegundos do segundo.</td>
+    </tr>
+    <tr>
+        <td>data.getTime()</td>
+        <td>Milissegundos desde 1970-01-01</td>
+        <td>Retorna o tempo total decorrido.</td>
+    </tr>
+</table>
+
+<p>Exemplo de formato de data: <span id="formattedDate"></span></p>
+
+<script src="js/datas.js"></script>
+</body>
+</html>

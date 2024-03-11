@@ -1,0 +1,31 @@
+//Funções
+
+//Serverm para encpsular um bloco de códigos com um objetivo definido
+
+//Exemplo:
+
+function calcularAreaTerreno(largura,comprimento){
+    var area= largura* comprimento
+
+    return area
+}
+
+/*usamos o a palavra function para declarar uma função,geralmente Sendo a primeira palavra um verbo no infinitivo e a segunda um substantivo iniciado com a primeira letra.
+
+
+//Vamos falar primeiro dos parâmetros que também podemos chamar de argumentos.
+
+
+Eles funcionam como uma espécie de entrada de dados para a função.
+
+Nós podemos não passar nenhum parâmetro com o mesmo passar quantos parâmetros forem necessários para
+
+a função.
+
+Basta separar os parâmetros por vírgula.
+
+Vale lembrar que os parâmetros são variáveis.
+
+Portanto a definição do nome de um parâmetro deve seguir a regra que já conhecemos para a definição
+
+de nomes de variáveis,ela podem ser do tipo void (que é vazio) e com o retorno chamado de (return).*/

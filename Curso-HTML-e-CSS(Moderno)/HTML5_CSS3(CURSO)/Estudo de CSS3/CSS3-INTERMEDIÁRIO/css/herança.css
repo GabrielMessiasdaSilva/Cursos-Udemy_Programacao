@@ -1,0 +1,59 @@
+/*******HERANÇA*****************/
+body{
+    color:red;
+}
+/*****Fim herança**************/
+
+/******especificidade**********/
+p{
+color:blue
+}
+p{
+color:red;
+}
+/*Ao salvar e recarregar vai ficar azul
+ ainda pois seletores iguais o último é sempre aplicado,com exceção ao usar o Important(mais não é recomendar usar).*/
+ 
+ 
+ /***porém existe um seletor mais especifico que o outro terá preferencia maior sobre as regras gerais,segue o exemplo abaixo/
+*/
+*{
+    color:royalblue
+}
+h2{
+ color: green;
+}
+
+/*como podemos notar o H2 teve preferencia do que a regras gerais*/
+
+/*aqui embaixo eu sou ainda bem maiiiis especificos*/
+h1.yellow{
+   color:yellow;
+}
+h1#bege{
+    color:beige
+}
+/*regra que será aplicada a preferencia de especificidades*/
+ 
+/*h1#bege{ /*1*
+     color:beige
+ } /
+
+
+
+
+ 
+/*h1.yellow{ /*2
+    color:yellow;
+ }*/
+ 
+ 
+
+/*h2{  /*3
+    color:blue;
+}*/
+
+
+
+
+ 

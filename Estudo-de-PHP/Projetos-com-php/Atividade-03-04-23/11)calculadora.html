@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora em PHP</title>
+</head>
+<body>
+    <form method="post" action="calculadora.php">
+        <label>Valor 1:
+            <input type="number" name="valor1" required>
+        </label>
+
+        <br>
+
+        <label>Valor 2:
+            <input type="number" name="valor2" required>
+        </label>
+
+        <br>
+
+        <label>Operação:
+            <select name="operacao" required>
+                <option value="+">Soma</option>
+                <option value="-">Subtração</option>
+                <option value="/">Divisão</option>
+                <option value="*">Multiplicação</option>
+            </select>
+        </label>
+
+        <br>
+
+        <button type="submit">Calcular</button>
+    </form>
+
+</body>
+</html>

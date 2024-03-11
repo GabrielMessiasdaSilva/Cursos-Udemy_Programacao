@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Eventos Mouse</title>
+</head>
+
+<style type="text/css">
+	.Eventos{
+	/*	padding-top:10px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+		padding-left: 20px; */
+		border: 1px solid red;
+		padding: 20px 15px 10px 5px;
+
+		/*aplicando o espaçmento externo*/
+
+		margin-top:20px;
+
+		background: #333;
+		width: 150px;
+		height: 150px;
+	}
+</style>
+<body>
+
+<!-- Criando uma CAIXA DIV-->
+<div
+ onclick="acao1()"class="Eventos">
+</div>
+
+<div  ondblclick="acao2()" class="Eventos">
+</div>
+
+<div onmouseup="acao3()" class="Eventos">
+</div>
+
+<div  onmouseover="acao4()"  class="Eventos">
+</div>
+
+<div  onmouseout="acao5()" class="Eventos">
+</div>
+
+ <script type="text/javascript" src="js/evento_mouse.js"></script>
+
+
+</body>
+</html>

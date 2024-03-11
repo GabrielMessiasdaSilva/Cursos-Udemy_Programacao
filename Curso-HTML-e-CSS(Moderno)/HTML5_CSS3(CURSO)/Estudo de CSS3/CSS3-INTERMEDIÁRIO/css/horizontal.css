@@ -1,0 +1,35 @@
+/******BARRA DE NAVEGAÇÃO HORIZONTAL**********/
+
+ul{
+ margin: 0px;
+ padding:0px;
+ list-style-type:none;
+ width: 900px;
+ background: #32c6dd url(../img/fundo-horizontal.png)repeat-x;
+ float: left;
+}
+
+     /*para colocar os elementos da maneira horizontal podemos fazer isso seguindo o exemplo abaixo  
+
+(Exemplo ↓  )
+ul li{
+    display:inline; 
+}
+*/
+ul li{
+    float: left;
+}
+
+ul a{
+    display:block;
+    padding:0 2em;
+    line-height: 2.2em;
+    text-decoration:none;
+    color:white;
+    background:url(../img/divisor-png) repeat-y;
+    border:1px solid rgb(79, 156, 170);
+}
+ul a:hover{
+    background: #32c6dd;
+    color:white;
+}

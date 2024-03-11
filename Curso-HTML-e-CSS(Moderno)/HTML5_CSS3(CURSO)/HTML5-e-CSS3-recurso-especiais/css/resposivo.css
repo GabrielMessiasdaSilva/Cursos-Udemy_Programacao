@@ -1,0 +1,38 @@
+img {
+    width: 400px;
+}
+
+/*/////////////////////////////////////*/
+
+/*aqui colocaremos o tipo de midias que estamos trabalhando ou seja,se é para impressora,desktop,mobile,screen(independente se é computador qualquer outra),temos a opção de colocar que é pra todos os dipositivo com o comando : all*/
+@media screen and (min-width:0px) and (max-width:400px)
+
+/*no medias sempre teremos uma series de regras para trabalhar,bem oq iremos colocar que quando o tamanho maximo foi de 400px a cor será vermelha*/
+    {
+    body {
+        background: red;
+    }
+    }
+
+    @media screen and (min-width:401px) and (max-width:800px)
+
+    
+        {
+        body {
+            background: rgba(100, 20, 121, 0.685);
+        }
+        }
+    
+
+        @media screen and (min-width:801px) and (max-width:1200px)
+
+    {
+    body {
+        background: rgba(19, 89, 129, 0.589);
+    }
+    }
+
+
+
+    
+    

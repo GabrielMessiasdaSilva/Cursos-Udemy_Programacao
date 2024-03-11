@@ -1,0 +1,12 @@
+div{
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px;
+    
+    /*com esses dois comandos podemos redefinir o tamanho da div,temos que usar em conjuntos essa duas propriedades,então podemos redimensionar a DIV*/
+    resize:both;/*aqui podemos ultilizar as seguintes propriedades,Horizontal,Vertical,Both para os dois lados e none*/
+    overflow:auto;
+
+}

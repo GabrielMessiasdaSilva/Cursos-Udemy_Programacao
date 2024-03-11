@@ -1,0 +1,81 @@
+/*Layouts */
+
+/* definindo a fonte e cor de fundo do corpo do documento */
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f2f2f2;
+}
+
+/* definindo o contêiner principal com largura fixa e centralizado na página */
+#container {
+	width: 920px; /* 720px // vamos converter o layout com valor fixo para líquido colocando %*/
+	margin: 0 auto; /* centralizando o contêiner na página */
+    background:#fff url(../imagens/coluna.png)repeat-y, left top; /* definindo a imagem de fundo */
+	background: #fff; /* definindo a cor de fundo de fallback */
+    min-width: 720px; /* aqui temos o tamanho mínimo */
+    max-width: 1280px; /* aqui definimos a largura máxima que queremos ter */
+}
+
+/* definindo a marca com altura, imagem de fundo e alinhamento centralizado */
+#marca {
+	height: 100px;
+	background: url(../imagens/cabecalho.jpg)no-repeat;
+	text-align: center;
+	line-height: 600px; /* alinhando verticalmente */
+}
+
+/* definindo o conteúdo principal com largura de 75% e flutuando à direita */
+#conteudo {
+	width:75%;
+	float: right;
+}
+
+/* definindo imagens de notícias com largura de 90% e espaçamento interno de 2px */
+img.img-noticia{
+    width:90%;
+    padding:2px;
+}
+
+/* definindo o conteúdo principal com largura de 63% e flutuando à esquerda */
+#conteudo-principal {
+	width: 63%;
+	float: left;
+}
+
+/* definindo o conteúdo secundário com largura de 50% e flutuando à direita */
+#conteudo-secundario {
+	width: 50%;
+	float: right;
+	background: #d1d1d1; /* definindo a cor de fundo */
+}
+
+/* definindo o estilo para títulos e parágrafos no conteúdo secundário */
+#conteudo-secundario h1, 
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* definindo a navegação com largura de 23%, flutuando à esquerda, e margem interna no topo e na parte inferior */
+#navegacao {
+	width: 23%;
+	float: left;
+	padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* definindo a lista de itens de navegação sem marcadores e sem margens */
+#navegacao ul {
+    margin:0;
+    padding: 0px;
+	list-style: none;
+}
+
+/* definindo o rodapé com limpeza de flutuação e cor de fundo */
+#rodape {
+	clear: both;
+	background: #c4c4c4;
+	padding: 5px;
+}

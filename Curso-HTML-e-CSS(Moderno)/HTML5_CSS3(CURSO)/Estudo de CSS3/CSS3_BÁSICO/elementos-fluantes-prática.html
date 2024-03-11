@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Define a codificação da página -->
+    <meta charset="UTF-8">
+    <!-- Define a compatibilidade com o Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Define a escala inicial da página para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título da página -->
+    <title> Elementos fluantes na pratica</title>
+    
+    <!-- Define o estilo da página -->
+    <style type="text/css">
+        
+        /* Define as propriedades do container principal */
+        #noticias{
+            width: 920px;
+            border: 1px solid gold;
+        }
+        /* Define as propriedades das notícias */
+        .noticia{
+            background: gray;
+            padding: 5px;
+            width:280px;
+            margin: 7px;
+            float:left;
+        }
+        /* Define as propriedades das imagens da galeria */
+        .imagem-galeria{
+            background: white;
+        }
+        /* Define a propriedade para limpar os floats */
+        .clear{
+            clear:both;
+        }
+    </style>
+</head>
+
+<body>
+   
+    <!-- Criação de um container principal para as notícias -->
+    <div id="noticias">
+        <!-- Criação da primeira notícia -->
+        <div class="noticia">1
+            <h2>Lorem ipsum dolor sit amet </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem officiis, provident sequi, repellat rem explicabo tenetur quam sint ab esse necessitatibus quaerat laborum recusandae ipsa? Labore quasi aliquam omnis accusamus.</p>
+            <a href="">veja mais</a>
+        </div>
+        
+        <!-- Criação da segunda notícia -->
+        <div class="noticia">2
+            <h2>Lorem ipsum dolor sit amet </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem officiis, provident sequi, repellat rem explicabo tenetur quam sint ab esse necessitatibus quaerat laborum recusandae ipsa? Labore quasi aliquam omnis accusamus.</p>
+            <a href="">veja mais</a>
+        </div>
+        
+        <!-- Criação da terceira notícia -->
+        <div class="noticia">3
+            <h2>Lorem ipsum dolor sit amet </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem officiis, provident sequi, repellat rem explicabo tenetur quam sint ab esse necessitatibus quaerat laborum recusandae ipsa? Labore quasi aliquam omnis accusamus.</p>
+            <a href="">veja mais</a>
+        </div>
+        
+        <!-- Criação do container para a galeria de imagens -->
+        <div>
+            <div>
+                <img src="img/imagem1.png">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, commodi ex impedit eius vel asperiores reiciendis, adipisci incidunt consectetur vero cumque illum. Laborum a nobis itaque ratione provident nihil modi?</p>
+            </div>
+
+        </div>
+        
+    </div>
+    
+</body>
+
+</html>

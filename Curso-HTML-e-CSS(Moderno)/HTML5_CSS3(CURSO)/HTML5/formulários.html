@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body {
+            background-color: rgba(2, 39, 39, 0.418);
+        }
+    </style>
+</head>
+
+<body background-color="">
+    <h1>Formulários</h1>
+
+    <form action="arquivo.php" method="get">
+
+        <!--LEGENDA PARA NOME-->
+        <label for="campo_nome">Nome</label><br>
+
+        <!--CAMPO INPUT TYPE TEXT-->
+        <input id="campo_nome" type="text" placeholder="Digite o seu nome" required>
+        <br><br>
+
+
+        <label for="sobre_nome">Sobrenome</label><br>
+        <input id="sobre_nome" type="text" placeholder="Digite o seu sobresnome" required>
+
+        <br><br>
+        <label for="email">Email</label><br>
+        <input id="senha" type="email" placeholder="Digite o seu email" required>
+
+
+        <br><br>
+        <label for="senha">Senha</label><br>
+        <input id="senha" type="password" placeholder="Digite o sua senha" required> <input type="date">
+        <br><br>
+        <!--CAMPO INPUT DO TIPO ENVIAR-->
+        <input type="submit" value="Confirmar">
+
+        <hR>
+
+
+
+        <h2>Outros Formulários</h2>
+        <!--CAMPO INPUT DO TIPO RÁDIO-->
+        <h3>Animais</h3>
+
+        <input type="radio" id="dog" name="animal" value="cachorro">
+        <label for="dog">Cachorro</label>
+        <BR><BR>
+
+        <input type="radio" id="cat" name="animal" value="gato">
+        <label for="cat">Gato</label>
+        <br><br>
+
+
+        <input type="radio" id="bird" name="animal" value="Passarinho">
+        <label for="bird">Passarinho</label>
+        <BR><BR>
+
+
+
+        <!--CAMPO INPUT DO TIPO Chekbox-->
+
+        <h3>O que você tem casa?</h3>
+        <input id="item1" type="checkbox" name="item1" value="tv">
+        <label for="item1">TV</label>
+        <br><br>
+
+
+        <input id="item2" type="checkbox" name="item2" value="Geladeira">
+        <label for="item2">Geladeira</label>
+        <br><br>
+
+
+        <input id="item3" type="checkbox" name="item3" value="Fogão">
+        <label for="item3">Fogão</label>
+        <br><br>
+
+
+        <input id="item4" type="checkbox" name="item4" value="Máquina de lavar">
+        <label for="item4">Máquina de lavar</label>
+        <br><br>
+
+
+        <hr>
+        <!--Outros INPUTS type-->
+        <h3>Outros INPUTS type</h3>
+        <input type="week">
+        <input type="date">
+        <input type="datetime">
+        <input type="datetime-local">
+        <input type="file">
+        <input type="hidden">
+        <hr>
+
+        <h3> Escolha uma cor :</h3>
+        <select>
+            <option selected disabled value="">selecione uma cor</option>
+            <option value="vermelho">vermelho</option>
+            <option value="azul">azul</option>
+            <option value="verde">verde</option>
+        </select>
+        <br> <br> <br>
+
+        <h3>Digite sua Mensagem:</h3>
+
+        <textarea placeholder="Digite sua mensagem" name="mensagem" rows="15" cols="55"></textarea>
+
+        <button>Clique aqui agora!!!!!</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+</body>
+
+</html>

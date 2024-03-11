@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Exemplo de Tipos de Variáveis em JavaScript</title>
+    <script>
+        // String: Armazena texto entre aspas simples ou duplas
+        var nome = "João";
+        var sobrenome = 'Silva';
+
+        // Number: Armazena valores numéricos, inteiros ou fracionados
+        var idade = 30;
+        var altura = 1.75;
+        var saldoBancario = -500.25;
+
+        // Boolean: Armazena valores de verdadeiro ou falso
+        var maiorDeIdade = true;
+        var possuiCarro = false;
+
+        // Undefined: Indica que a variável foi declarada, mas ainda não foi atribuído nenhum valor a ela
+        var endereco;
+
+        // Null: Indica que a variável possui um valor nulo, ou seja, não tem valor definido
+        var telefone = null;
+
+        // Object: Armazena um objeto que pode possuir diversas propriedades e métodos
+        var pessoa = {
+            nome: "Maria",
+            idade: 25,
+            endereco: {
+                rua: "Rua 1",
+                numero: 123
+            },
+            saudacao: function () {
+                return "Olá, meu nome é " + this.nome + " e eu tenho " + this.idade + " anos.";
+            }
+        };
+
+        // Array: Armazena uma lista de valores
+        var frutas = ["maçã", "banana", "laranja"];
+
+        // Função: Armazena um bloco de código que pode ser chamado em outro lugar do programa
+        function soma(a, b) {
+            return a + b;
+        }
+
+        console.log(nome);
+        console.log(idade);
+        console.log(maiorDeIdade);
+        console.log(endereco);
+        console.log(telefone);
+        console.log(pessoa.nome);
+        console.log(frutas[1]);
+        console.log(soma(3, 5));
+    </script>
+</head>
+
+<body>
+    <h1>Exemplo de Tipos de Variáveis em JavaScript</h1>
+</body>
+
+</html>

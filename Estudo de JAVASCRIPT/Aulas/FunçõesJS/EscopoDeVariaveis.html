@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopos de Variaveis</title>
+    <script>
+        //existem 3 escopos: Global, Função e o bloco
+        var serie = 'amigos'
+
+
+        //Escopo de blocos 
+        if (true) {
+            var serie2 = ' eu a patroa e as crianças'
+            document.write(serie)
+        }
+
+        document.write(serie2)
+        document.write('<br />')
+
+
+        function x() {
+            document.write(serie)
+
+            document.write(serie2)
+        }
+
+        x()
+        
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

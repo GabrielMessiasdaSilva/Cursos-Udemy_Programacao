@@ -1,0 +1,29 @@
+Exercício 21: Sequência Crescente
+Escreva um programa que solicite um número inteiro positivo e imprima uma sequência crescente de números, começando de 1 até o número fornecido.
+
+Exercício 22: Contagem de Pares e Ímpares
+Desenvolva um programa que solicite um número inteiro e conte quantos números pares e ímpares existem até esse número.
+
+Exercício 23: Múltiplos de 5
+Crie um programa que imprima os múltiplos de 5 de 1 até 100.
+
+Exercício 24: Números Decrescentes
+Escreva um programa que solicite um número inteiro positivo e imprima uma sequência decrescente de números, começando do número fornecido até 1.
+
+Exercício 25: Verificação de Primo
+Implemente um programa que solicite um número inteiro e verifique se é primo ou não.
+
+Exercício 26: Soma dos Dígitos Pares
+Desenvolva um programa que solicite um número e calcule a soma dos seus dígitos pares.
+
+Exercício 27: Jogo da Adivinhação
+Crie um jogo simples de adivinhação. O programa deve gerar um número aleatório entre 1 e 100 e pedir ao usuário para adivinhar. O jogo continua até que o usuário acerte o número.
+
+Exercício 28: Tabela de Multiplicação
+Elabore um programa que imprima a tabela de multiplicação de 1 a 10 para um número fornecido pelo usuário.
+
+Exercício 29: Troco em Notas
+Implemente um programa que solicite um valor em reais (pode conter centavos) e calcule o número mínimo de notas de 100, 50, 20, 10, 5, 2 e 1 que podem compor esse valor.
+
+Exercício 30: Média de Números Pares
+Crie um programa que solicite vários números ao usuário até que seja inserido um número negativo. Calcule e imprima a média dos números pares digitados.

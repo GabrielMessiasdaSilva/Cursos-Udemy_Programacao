@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio ABC</title>
+    <script>
+        window.onload = function() {
+            var a = 10;
+            var b = 20;
+            var c = null; // variavel auxiliar
+
+            console.log('Antes da troca A=' + a + ' e B=' + b);
+
+            document.write('A: ' + a + '<br />');
+            document.write('B: ' + b + '<br />');
+            document.write('C: ' + c + '<br />');
+            document.write('<hr>');
+
+            // Logica de inversão dos valores da variaveis A e B
+
+            // Armazenar o valor de A em uma variável auxiliar
+            c = a;
+            console.log('Depois de c = a: A=' + a + ' B=' + b + ' C=' + c);
+
+            // Atribuir o valor de B para A
+            a = b;
+            console.log('Depois de a = b: A=' + a + ' B=' + b + ' C=' + c);
+
+            // Atribuir o valor de A (previamente armazenado em aux) para B
+            b = c;
+            console.log('Depois de b = c: A=' + a + ' B=' + b + ' C=' + c);
+
+            document.write('A: ' + a + '<br />');
+            document.write('B: ' + b + '<br />');
+            document.write('C: ' + c + '<br />');
+        };
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

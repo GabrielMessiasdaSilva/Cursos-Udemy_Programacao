@@ -1,0 +1,46 @@
+/* Define a classe "caixa" */
+.caixa {
+    width: 400px;
+    /* Define a largura da caixa como 400 pixels */
+    background: #dedede url(../imagens/fundo-arredondamento.png) repeat-y;
+    /* Define a cor de fundo da caixa como cinza claro (#dedede) e adiciona uma imagem de fundo repetida verticalmente */
+}
+
+/* Define o estilo do título da caixa (h2) */
+.caixa h2 {
+    padding: 10px 20px 0 20px;
+    /* Define o preenchimento (padding) superior como 10 pixels, o preenchimento direito e esquerdo como 20 pixels e o preenchimento inferior como 0 */
+    background: url(../imagens/topo2.png)no-repeat left top;
+    /* Adiciona uma imagem de fundo para a parte superior da caixa */
+}
+
+/* Define o estilo do parágrafo dentro da caixa */
+.caixa p {
+    padding: 0 20px;
+    /* Define o preenchimento direito e esquerdo como 20 pixels e o preenchimento superior e inferior como 0 */
+    margin-bottom: 0;
+    /* Remove a margem inferior para evitar espaçamento extra entre parágrafos */
+}
+
+/* Define o estilo para o último elemento dentro da caixa */
+.caixa .ultimo {
+    background: url(../imagens/baixo2.png)no-repeat left bottom;
+    /* Adiciona uma imagem de fundo para a parte inferior da caixa */
+    padding-bottom: 20px;
+    /* Adiciona um preenchimento inferior de 20 pixels */
+}
+
+/* Comentário para desativar um conjunto anterior de estilos */
+/*
+.caixa{
+    width: 400px;
+    background: #dedede url(../imagens/topo2.png) no-repeat left top;
+}
+.caixa p{
+    padding:0px 20px 20 20px;
+    background :url(../imagens/baixo2.png) no-repeat left bottom;
+}
+.caixa h2{
+    padding:10px 20px 0 20px;
+}
+*/
