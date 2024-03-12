@@ -1,0 +1,20 @@
+1. try (Tente):
+
+Este bloco contém o código que você deseja executar.
+O JavaScript tenta executar esse código normalmente.
+
+2. catch (Pegue):
+
+Este bloco define como lidar com erros (exceções) que podem ocorrer dentro do bloco try.
+Se um erro for lançado ( *thrown* ) dentro do bloco try, a execução pula para o bloco catch.
+O bloco catch recebe um objeto de erro (geralmente chamado de error) como argumento, contendo detalhes sobre o erro.
+Você pode acessar a mensagem de erro e o tipo dentro do bloco catch para lidar com a situação de forma adequada.
+3. throw (Lançar):
+
+Esta declaração é usada para criar deliberadamente um erro.
+Você pode lançar um objeto de erro com uma mensagem personalizada ou usar tipos de erro integrados como TypeError ou ReferenceError.
+Lançar um erro permite sinalizar que algo inesperado aconteceu e controlar como o erro é tratado.
+4. finally (Finalmente):
+
+Este bloco sempre é executado, independentemente de ter ocorrido um erro no bloco try ou não.
+Ele é normalmente usado para tarefas de limpeza, como fechar arquivos, liberar recursos ou garantir que determinadas ações sempre sejam realizadas.
