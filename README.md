@@ -1,6 +1,6 @@
 # Curso Web Udemy 🌐
 
-Neste repositório, eu compartilho alguns cursos que realizei na plataforma Udemy sobre desenvolvimento web. Os cursos abordam temas diferentes, mas se complementam entre si. 🙌
+Neste repositório, eu compartilho alguns cursos que realizei na plataforma Udemy sobre desenvolvimento web. Os cursos abordam temas diferentes, mas se complementam entre si.E claro não se limitando a apenas cursos da Udemy,aqui contém variedades de conhecimento que busquei de outras fontes disponiveis gratuitamente! 🙌
 
 Eu organizei as pastas dos cursos da seguinte forma:
 
@@ -14,7 +14,7 @@ Eu organizei as pastas dos cursos da seguinte forma:
 
 ## Curso WEB Completo: 20 Cursos + 20 Projetos 🏆
 
-Neste curso abrangente, mergulhei fundo no desenvolvimento web. Através de 20 cursos e 20 projetos práticos, aprendi a criar aplicações da ponta ao banco de dados. Alguns dos tópicos que explorei incluem:
+Neste curso abrangente, aprendi a base da WEB usando a tríade Html,css e Javascript e recursos backend "puro" com PHP. Através de 20 cursos e 20 projetos práticos, aprendi a criar aplicações da ponta ao banco de dados. Alguns dos tópicos que explorei incluem:
 
 
 - HTML5 e CSS3: Construção de estruturas e estilização de páginas web. 🎨
@@ -26,11 +26,11 @@ Neste curso abrangente, mergulhei fundo no desenvolvimento web. Através de 20 c
 - Ajax : envio e recebimento de dados de forma assíncrona. ⚡
 - Git & Github : Versionamento e colaboração de código. 🐙
 - APIs: Integração com serviços externos. 🌎
-- IONIC: Criação de aplicativos móveis conectados a aplicações web. 📲
+
 
 ## Curso de JS/TS do Básico ao Avançado 🚀
 
-Este curso focou especificamente em JavaScript e TypeScript. Aprendi desde os conceitos básicos até técnicas avançadas. Alguns dos tópicos abordados foram:
+Este curso focou especificamente em JavaScript e TypeScript. Estou aprendendo desde os conceitos básicos até técnicas avançadas. Alguns dos tópicos abordados foram:
 
 - Variáveis, condicionais e loops em JavaScript. 🔢
 - ES6 (JavaScript Moderno): Arrow functions, classes, promises e async/await. 🚀
@@ -47,4 +47,5 @@ O Angular é um framework poderoso para construção de aplicações web. Neste 
 - Consumo de APIs REST. 🍽
 - Formulários reativos. 📝
 - Autenticação e autorização. 🔐
+
 
