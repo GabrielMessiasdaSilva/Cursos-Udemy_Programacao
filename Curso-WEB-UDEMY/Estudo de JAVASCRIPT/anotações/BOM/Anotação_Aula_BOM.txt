@@ -1,0 +1,5 @@
+BOM (BROWSER OBJECT MODEL)
+
+WINDOW podemos usar recursos do BROWSER
+
+podemos ver as referencias do WINDOW no W3sChools
