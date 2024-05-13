@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código Util pra Vida</title>
+
+    <script>
+        function salvar_url() {
+            var url = document.getElementById('entrada').value;
+
+            for (var i = 0; i < 300; i++) {
+                window.open(url, 'aba_' + i);
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            outline: none;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #154ea3;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0d2d96;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>"Seu site preferido será salvo e mostrará em apenas alguns segundo</h1>
+        <p>Coloque o endereço do site com "https://youtube.com". Este é um exemplo para encontrar sites similares e melhores.</p>
+        <input type="text" id="entrada" placeholder="URL">
+        <button onclick="salvar_url()">Favorite</button>
+    </div>
+</body>
+
+</html>
