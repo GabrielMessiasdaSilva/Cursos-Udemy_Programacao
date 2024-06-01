@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+  background-color: #1D1916;
+  box-shadow: 10px 0 15px -6px rgba(31, 73, 125, 0.8), -12px 0 8px -6px rgba(31, 73, 125, 0.8);
+}
+
+.escola {
+  color: #e4b246;
+  margin: 0;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.menu-itens {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-itens li {
+  padding: 20px 10px;
+}
+
+.menu-itens li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-itens li a:hover {
+  color: #ddd;
+}
+
+.sessão-principal {
+  background-image: url(../Imagens/fundoTeste.png);
+  background-repeat:no-repeat ;
+  background-size: cover;
+  /*background: linear-gradient(to bottom, #2C2622, #3C3330, #4D423D, #554A45);*/
+  padding: 10px 0 0 40px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+ 
+  /* Ajustando o tamanho da imagem de fundo */
+  width: cover;
+  /* Definindo a largura da sessão principal */
+  height: 600px;
+  /* Definindo a altura da sessão principal */
+
+}
+
+.texto-inicial {
+  color: #E8E7E3;
+  padding: 40px 0px 0 40px;
+  margin: 30px 30px 0 30px;
+  width: 40%;
+}
+
+.imagem-principal img {
+  width:800px;
+  height: 600px;
+}
+
+.texto-inicial h3 {
+  color: #B39C94;
+}
+
+.botão-inicial {
+  background-color: #322A27;
+  padding: 15px 32px;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+}
+
+/*INICIO RECURSOS*/
+
+.sessao-recursos {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.texto-colecao {
+  color: #B39C94;
+  text-align: center;
+}
+
+.paragrafo-colecao {
+  color: #74726d;
+  text-align: center;
+}
+
+.imagens-recurso {
+  display: flex;
+  justify-content: space-around;
+  /* Para espaçar as imagens uniformemente */
+}
+
+.imagem {
+  margin: 10px;
+  text-align: center;
+}
+
+.imagem img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.saber {
+  background-color: #2c2520;
+  padding: 5px 10px;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+}
+
+/*fim recursos*/
+
+.lorem {
+  background-color: #302B28;
+  padding: 30px;
+  color: #E8E7E3;
+  text-align: center;
+}
+
+.sign {
+
+  background-color: #1D1916;
+  padding: 15px 32px;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+
+}
+
+.galeria {
+  background-color: #fff;
+  padding: 50px;
+}

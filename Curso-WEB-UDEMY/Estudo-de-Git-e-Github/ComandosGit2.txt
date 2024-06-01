@@ -1,0 +1,234 @@
+# Inicializar um novo repositório Git
+git init
+
+# Clonar e criar uma cópia local de um repositório remoto
+git clone <url>
+
+# Configurar as configurações globais do Git
+git config --global <nome_da_configuração> <valor>
+
+# Configurar as configurações locais do Git para um repositório específico
+git config --local <nome_da_configuração> <valor>
+
+# --------------- Avançado ------------------
+
+# Mostrar um resumo das configurações do Git
+git config --list
+
+# Definir um editor de texto personalizado para mensagens do Git
+git config --global core.editor "<comando_do_editor>"
+
+# Criar um alias (atalho) de comando Git
+git config --global alias.<atalho> <comando>
+
+# Habilitar a colorização automática da saída do Git
+git config --global color.ui auto
+
+# Armazenar em cache as credenciais do Git por um período de tempo específico
+git config --global credential.helper 'cache --timeout=<segundos>'
+
+# Configurar o Git para detectar tipos específicos de erros de espaçamento em branco
+git config --global core.whitespace <opções>
+
+# Podar automaticamente ramos de rastreamento remotos ao buscar atualizações
+git config --global fetch.prune true
+
+# Definir uma ferramenta de diferenciação personalizada para o Git
+git config --global diff.tool <ferramenta>
+
+# Definir uma ferramenta de mesclagem personalizada para o Git
+git config --global merge.tool <ferramenta>
+
+# Comparar alterações usando uma ferramenta de diferenciação personalizada
+git difftool
+
+# Resolver conflitos de mesclagem com uma ferramenta de mesclagem personalizada
+git mergetool
+
+
+
+
+
+Operações de arquivo
+
+# Mostrar o status da árvore de trabalho (working tree)
+git status
+
+# Adicionar arquivos à área de preparação (staging area)
+git add <arquivo(s)>
+
+# Remover arquivos da árvore de trabalho e da área de preparação
+git rm <arquivo(s)>
+
+# Mover ou renomear um arquivo
+git mv <antigo_arquivo> <novo_arquivo>
+
+# Realizar um commit das alterações com uma mensagem
+git commit -m "mensagem do commit"
+
+# Mostrar as diferenças entre a árvore de trabalho e o último commit
+git diff
+
+# --------------- Avançado ------------------
+
+# Assumir que um arquivo rastreado não sofreu alterações (não será exibido em git status)
+git update-index --assume-unchanged <arquivo>
+
+# Restaurar o comportamento normal de rastreamento de alterações em um arquivo
+git update-index --no-assume-unchanged <arquivo>
+s
+# Mostrar as diferenças entre dois commits específicos
+git diff <commit_id1>..<commit_id2>
+
+# Desfazer a adição de um arquivo à área de preparação, mas mantê-lo na árvore de trabalho
+git rm --cached <nome_do_arquivo>
+
+
+
+
+
+
+Ramificação e fusão
+
+# Listar todas as ramificações
+git branch
+# Criar uma nova ramificação
+git branch <nome_da_ramificação>
+# Mudar para uma ramificação específica
+git checkout <nome_da_ramificação>
+# Fundir uma ramificação na ramificação atual
+git merge <nome_da_ramificação>
+# Excluir uma ramificação específica
+git branch -d <nome_da_ramificação>
+# Listar todas as ramificações remotas
+git branch -r
+
+# --------------- Avançado ------------------
+
+# Listar ramificações com informações adicionais
+git branch -vv
+# Criar uma nova ramificação com base em uma ramificação remota
+git checkout -b <nome_da_ramificação> <nome_remoto>/<ramificação_remota>
+# Cancelar uma fusão em caso de conflitos
+git merge --abort
+# Rebase da ramificação atual em outra ramificação
+git rebase <nome_da_ramificação>
+# Cancelar uma operação de rebase em andamento
+git rebase --abort
+# Rebase interativo para editar, mesclar, reordenar ou descartar commits
+git rebase -i
+# Rebase de commits na ramificação atual em uma ramificação remota de forma interativa
+git rebase -i <nome_remoto>/<ramificação_remota>
+
+Repositórios remotos
+# Listar repositórios remotos
+git remote
+# Adicionar um repositório remoto
+git remote add <nome> <url>
+# Buscar do repositório remoto
+git fetch <nome_remoto>
+# Puxar mudanças de uma ramificação remota
+git pull <nome_remoto> <ramificação_remota>
+# Enviar mudanças para um repositório remoto
+git push <nome_remoto> <ramificação_local>
+# Remover um repositório remoto
+git remote rm <nome_remoto>
+# Exibir informações sobre um repositório remoto específico
+git remote show <nome_remoto>
+# Mostrar as ramificações de rastreamento para repositórios remotos
+git remote show <nome_remoto> --verbose
+
+# --------------- Avançado -------------------
+
+# Buscar atualizações de todos os repositórios remotos
+git remote update
+# Forçar o envio de mudanças para um repositório remoto, sobrescrevendo o histórico remoto
+git push --force <nome_remoto> <ramificação_local>
+# Enviar todas as tags para um repositório remoto
+git push --tags <nome_remoto>
+# Renomear um repositório remoto
+git remote rename <nome_antigo> <nome_novo>
+# Alterar a URL de um repositório remoto
+git remote set-url <nome> <nova_url>
+# Remover ramificações remotas obsoletas
+git remote prune <nome_remoto>
+# Listar todas as ramificações remotas que foram mescladas na ramificação atual
+git branch -r --merged
+# Listar todas as ramificações remotas que ainda não foram mescladas na ramificação atual
+git branch -r --no-merged
+# Buscar atualizações de um repositório remoto e remover ramificações remotas obsoletas
+git fetch -p
+
+# Rastrear uma ramificação remota e configurar a ramificação local para sincronizar automaticamente com ela
+git branch --track <nome_da_ramificação> <nome_remoto>/<ramificação_remota>
+# Configurar uma ramificação local existente para rastrear uma ramificação remota
+git branch -u <nome_remoto>/<ramificação_remota>
+# Enviar uma ramificação para um repositório remoto e configurá-la para rastrear a ramificação remota
+git push -u <nome_remoto> <ramificação_local>
+# Remover a associação de rastreamento entre uma ramificação local e uma ramificação remota
+git branch --unset-upstream <nome_da_ramificação>
+
+
+Histórico de confirmações
+# Exibir o histórico de confirmações
+git log
+# Exibir um histórico de confirmações condensado
+git log --oneline
+# Exibir um histórico de confirmações com gráfico de ramificações
+git log --graph
+# Filtrar o histórico de confirmações por autor
+git log --author=<nome_do_autor>
+# Exibir o histórico de confirmações desde uma data específica
+git log --since=<data>
+# Exibir o histórico de confirmações até uma data específica
+git log --until=<data>
+
+
+
+# Listar todas as tags
+git tag
+# Criar uma nova tag em um commit específico
+git tag <nome_da_tag> <ID_do_commit>
+# Criar uma tag anotada com uma mensagem
+git tag -a <nome_da_tag> -m "mensagem_da_tag"
+# Excluir uma tag específica
+git tag -d <nome_da_tag>
+# Excluir uma tag remota específica
+git push <nome_remoto> --delete <nome_da_tag>
+# Exibir informações sobre uma tag específica
+git show <nome_da_tag>
+
+
+
+
+
+
+# Salvar temporariamente as alterações na árvore de trabalho
+git stash save "mensagem do stash"
+# Listar todos os stashes
+git stash list
+# Aplicar as alterações de um stash específico
+git stash apply <stash>
+# Remover um stash específico
+git stash drop <stash>
+# Remover todos os stashes
+git stash clear
+
+
+
+
+
+
+# Gerar um resumo de solicitação de pull com as alterações entre dois commits
+git request-pull <commit_inicial> <commit_final> <URL>
+# Resumir o histórico de commits, listando autores e suas contribuições
+git shortlog
+# Listar todos os arquivos rastreados pelo Git
+git ls-files
+# Procurar por um padrão especificado nos arquivos rastreados pelo Git
+git grep <padrão>
+
+
+
+
+
