@@ -1,0 +1,8 @@
+comandos para rodar app.js
+//node "nome-do-arquivo"
+
+
+usar para criação de módulos o "npm init -y"
+
+e no package .json usamos o  abaixo de main,
+ "type": "module",
