@@ -1,0 +1,1 @@
+Comando para criar um projeto em branco no react native : "npx create-expo-app --template" 
