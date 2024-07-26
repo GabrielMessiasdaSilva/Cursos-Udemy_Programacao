@@ -1,8 +1,106 @@
-comandos para rodar app.js
-//node "nome-do-arquivo"
 
+Comandos para rodar `app.js`
 
-usar para criação de módulos o "npm init -y"
+```bash
+// Rode o arquivo app.js
+node "nome-do-arquivo"
+```
 
-e no package .json usamos o  abaixo de main,
- "type": "module",
+Usar para criação de módulos o comando
+
+```bash
+npm init -y
+```
+
+No `package.json`, adicione abaixo de `main`
+
+```json
+"type": "module",
+```
+
+Instalando o `nodemon` globalmente
+
+```bash
+npm install nodemon -g
+```
+
+Usando o MySQL pelo Terminal
+
+Para acessar o phpMyAdmin pelo CMD e criar um banco de dados, siga estas instruções:
+
+1. Abra o XAMPP e inicie o MySQL:
+   - Abra o XAMPP Control Panel.
+   - Inicie o módulo MySQL clicando em "Start".
+
+2. Abra o terminal (CMD):
+   - Pressione `Win + R`, digite `cmd`, e pressione `Enter` para abrir o prompt de comando.
+
+3. Navegue até o diretório do MySQL em XAMPP:
+   - No terminal, navegue até o diretório do MySQL dentro da pasta do XAMPP. O caminho padrão é geralmente `C:\xampp\mysql\bin`. Você pode usar o comando `cd` para mudar de diretório. Por exemplo:
+     ```shell
+     cd C:\xampp\mysql\bin
+     ```
+
+4. Acesse o MySQL:
+   - Digite o comando a seguir para acessar o MySQL. Por padrão, o usuário root não tem senha:
+     ```shell
+     mysql -u root
+     ```
+
+5. Crie um banco de dados:
+   - Uma vez no prompt do MySQL, você pode criar um banco de dados com o seguinte comando:
+     ```sql
+     CREATE DATABASE nome_do_banco_de_dados;
+     ```
+     Substitua `nome_do_banco_de_dados` pelo nome que deseja dar ao seu banco de dados.
+
+Exemplos de comandos no terminal
+
+1. Abra o terminal e navegue até o diretório MySQL:
+   ```shell
+   cd C:\xampp\mysql\bin
+   ```
+
+2. Acesse o MySQL:
+   ```shell
+   mysql -u root
+   ```
+
+3. No prompt do MySQL, crie o banco de dados:
+   ```sql
+   CREATE DATABASE meu_banco_de_dados;
+   ```
+
+4. Após criar o banco de dados, você pode verificá-lo listando todos os bancos de dados disponíveis com o comando:
+   ```sql
+   SHOW DATABASES;
+   ```
+
+5. Saia do MySQL com o comando:
+   ```sql
+   EXIT;
+   ```
+
+Isso cria um novo banco de dados usando o CMD com o MySQL do XAMPP.
+
+Usando phpMyAdmin para criar um banco de dados
+
+1. Abra o XAMPP e inicie o MySQL e o Apache:
+   - Abra o XAMPP Control Panel.
+   - Inicie os módulos MySQL e Apache clicando em "Start".
+
+2. Acesse o phpMyAdmin:
+   - Abra um navegador web e vá para `http://localhost/phpmyadmin`.
+
+3. Crie um banco de dados:
+   - No phpMyAdmin, clique em "Databases" na parte superior.
+   - Digite o nome do banco de dados desejado no campo "Database name".
+   - Selecione o collation desejado (opcional).
+   - Clique em "Create".
+
+Isso cria um banco de dados diretamente pelo phpMyAdmin, uma interface web gráfica para o MySQL.
+
+Instalando o sequelize:
+
+npm install --save sequelize
+npm install --save mariadb 
