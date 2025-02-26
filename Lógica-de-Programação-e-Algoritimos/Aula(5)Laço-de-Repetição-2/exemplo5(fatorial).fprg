@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-22 07:21:20 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjI7IjA2OjUyOjE3ICI7MjUxNw=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjI7IjA3OjAwOjIwICI7MTtHYWJyaWVsIDIyO0dBQlJJRUw7MjAyMy0wMi0yMjsiMDY6MzY6NTIgIjtFeGVtcGxvMi5mcHJnOzY1MDY="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjI7IjA3OjIxOjIwICI7MjsyNjE3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="contador, numero, fatorial" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um numero&quot;" newline="True"/>
+            <input variable="numero"/>
+            <assign variable="contador" expression="numero"/>
+            <assign variable="fatorial" expression="1"/>
+            <do expression="1&lt;contador">
+                <assign variable="fatorial" expression="fatorial*contador"/>
+                <assign variable="contador" expression="contador-1"/>
+            </do>
+            <output expression="&quot;o valor do fatorial de &quot;&amp;numero&amp; &quot; &#233; &quot;&amp;fatorial" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-19 03:34:47 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTk7IjAzOjE2OjM2ICI7MjUyMQ=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTk7IjAzOjM0OjQ3ICI7MTsyNjMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Dinheiro" type="Real" array="False" size=""/>
+            <output expression="&quot;Quanto dinheiro vc tem?&quot;" newline="True"/>
+            <input variable="Dinheiro"/>
+            <if expression="dinheiro&gt;=10000">
+                <then>
+                    <output expression="&quot;partiu Disney&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;que pena&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

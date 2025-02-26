@@ -1,0 +1,1 @@
+Dá funcionalidade ao HTML, como funcoes,exiba dados do back no front

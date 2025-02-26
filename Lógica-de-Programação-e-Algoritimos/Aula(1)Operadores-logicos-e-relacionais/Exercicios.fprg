@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-18 05:42:36 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTg7IjA1OjMxOjA2ICI7MjUxNg=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTg7IjA1OjQyOjM2ICI7MjsyNjMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="AnoATual, AnoNascimento, Idade" type="Integer" array="False" size=""/>
+            <output expression="&quot;em que ano no&#180;s estamos?:&quot;" newline="True"/>
+            <input variable="AnoAtual"/>
+            <output expression="&quot;em que ano eu nasci? :&quot;" newline="True"/>
+            <input variable="AnoNascimento"/>
+            <assign variable="Idade" expression="AnoAtual-AnoNascimento"/>
+            <output expression="&quot;ent&#227;o voc&#234; ira fazer &quot; &amp;idade&amp; &quot; anos&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

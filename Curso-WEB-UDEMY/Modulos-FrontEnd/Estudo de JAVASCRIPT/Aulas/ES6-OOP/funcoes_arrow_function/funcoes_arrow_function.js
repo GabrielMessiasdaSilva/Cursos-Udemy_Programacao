@@ -1,25 +1,57 @@
-// Comentário sobre o código: 
-// Este código contém duas funções que calculam áreas de figuras geométricas.
-// A primeira função, 'quadrado', calcula a área de um quadrado elevando o lado ao quadrado.
-// A segunda função, 'trianguloIsoscele', calcula a área de um triângulo isóscele usando a fórmula (base * altura) / 2, 
-// mas como não há altura informada, assume-se que a altura é igual à base, o que não é correto para todos os triângulos isósceles.
+// Função que calcula a área de um quadrado elevando o lado ao quadrado
+let calcularAreaQuadrado = (lado) => lado ** 2;
 
-// Comentário sobre a arrow function:
-// A arrow function é uma forma concisa de criar funções em JavaScript. 
-// Ela é definida usando a sintaxe: parâmetros => expressão.
-// No caso da função 'trianguloIsoscele', ela é equivalente a:
-// let trianguloIsoscele = function(x) {
-//   return (x * x) / 2;
-// }
+document.write('Resultado do quadrado foi: ' + calcularAreaQuadrado(4));
+document.write('<hr>');
 
-let quadrado= function(x){
-    return x*x;
+// Função que calcula a área de um triângulo isósceles.
+// Assumimos que a altura deve ser calculada com base no teorema de Pitágoras.
+let calcularAreaTrianguloIsoscele = (base, altura) => (base * altura) / 2;
 
-}
-document.write(quadrado(4))
+// Para exemplificar, podemos calcular a altura de um triângulo isósceles dado base e lado:
+let calcularAlturaTrianguloIsoscele = (base, lado) => {
+  if (lado <= base / 2) {
+    throw new Error("Lado deve ser maior que metade da base.");
+  }
+  return Math.sqrt(lado ** 2 - (base / 2) ** 2);
+};
+
+// Exemplo de cálculo:
+let base = 6;
+let lado = 5;
+let altura = calcularAlturaTrianguloIsoscele(base, lado);
+document.write(
+  `Resultado do triângulo isósceles foi: ${calcularAreaTrianguloIsoscele(base, altura)}`
+);
+document.write('<hr>');
+
+// Capturando evento e usando arrow function
+const verificarParOuImpar = () => {
+  const numero = parseInt(document.querySelector("input").value);
+  if (isNaN(numero)) {
+    alert("Por favor, insira um número válido.");
+    return;
+  }
+  const resultado = numero % 2 === 0 ? "par" : "ímpar";
+  alert(`${numero} é ${resultado}`);
+};
 
 
-let trianguloIsoscele = (x) => {
-  return (x * x) / 2;
-}
-document.write('</br></br>' + trianguloIsoscele(6))
+let verificarParidade = (numero) => {
+  if (isNaN(numero)) {
+    return "Entrada inválida";
+  }
+  return numero % 2 === 0 ? "par" : "ímpar";
+};
+
+let numeroExemplo = 9;
+document.write(
+  `O número ${numeroExemplo} é ${verificarParidade(numeroExemplo)}.`
+);
+document.write('<hr>');
+
+
+document.write(`
+
+  <button onclick="verificarParOuImpar()">Verificar Par ou Ímpar</button>
+`);

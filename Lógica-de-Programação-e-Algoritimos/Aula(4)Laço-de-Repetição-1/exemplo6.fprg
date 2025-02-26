@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-21 05:27:00 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjE7IjA1OjE0OjQ3ICI7MjUxNg=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjE7IjA1OjI3OjAwICI7MjsyNjE4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dolares, reais" type="Real" array="False" size=""/>
+            <declare name="contador, quantidade" type="Integer" array="False" size=""/>
+            <assign variable="contador" expression="1"/>
+            <output expression="&quot;Quantas vezes deseja fazer a convers&#227;o&quot;" newline="True"/>
+            <input variable="quantidade"/>
+            <while expression="contador&lt;=quantidade">
+                <output expression="&quot;Qual o valor digitado em R$?&quot;" newline="True"/>
+                <input variable="reais"/>
+                <assign variable="dolares" expression="reais/2.20"/>
+                <output expression="&quot;O valor convertido foi U$  &quot;&amp;dolares" newline="True"/>
+                <assign variable="contador" expression="contador+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

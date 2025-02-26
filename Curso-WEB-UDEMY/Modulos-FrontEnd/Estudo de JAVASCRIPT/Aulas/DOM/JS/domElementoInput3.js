@@ -8,7 +8,7 @@ function acao1() {
     //agora recuperamos o valor e limpamos a caixa de texto
     document.getElementById('entrada').value = '';
 //limpar espaços em brancos na extremidade da String
-caracter.trim()//trin é um fancao nativa para o tipo de tratamento
+caracter.trim()//trim é um função nativa para o tipo de tratamento
 
     switch (caracter) {
         case '0':

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-21 04:50:22 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjE7IjA0OjQ0OjQ4ICI7MjUxOQ=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjE7IjA0OjUwOjIyICI7MTsyNjE2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="contador, valor" type="Integer" array="False" size=""/>
+            <assign variable="contador" expression="0"/>
+            <output expression="&quot;contar at&#233; que valor?&quot;" newline="True"/>
+            <input variable="valor"/>
+            <while expression="contador&lt;=valor">
+                <output expression="contador" newline="True"/>
+                <assign variable="contador" expression="contador+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

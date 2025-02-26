@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-21 05:14:45 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjE7IjA0OjU3OjM4ICI7MjUyMg=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjE7IjA1OjA0OjI0ICI7NjtHYWJyaWVsIDIyO0dBQlJJRUw7MjAyMy0wMi0yMTsiMDQ6NTA6MjQgIjtFeGVtcGxvNC5mcHJnOzY1MTA="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjE7IjA1OjE0OjQ1ICI7MjsyNjIz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="contador, n, soma, maior" type="Integer" array="False" size=""/>
+            <assign variable="contador" expression="1"/>
+            <assign variable="soma" expression="0"/>
+            <while expression="contador&lt;=5">
+                <output expression="&quot;Digite o &quot; &amp;contador&amp; &quot; o.valor&quot;" newline="True"/>
+                <input variable="n"/>
+                <if expression="(n&gt;maior)">
+                    <then>
+                        <assign variable="maior" expression="n"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="soma" expression="soma+n"/>
+                <assign variable="contador" expression="contador+1"/>
+            </while>
+            <output expression="&quot;A soma de todos os valores foi  &quot;&amp;soma" newline="True"/>
+            <output expression="&quot;o maior valor digitado foi &quot;&amp;maior" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

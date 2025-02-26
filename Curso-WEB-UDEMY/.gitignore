@@ -22,10 +22,6 @@ build/
 *.swp
 
 # Ignore arquivos de imagens que não devem ser versionados
-*.png
-*.jpg
-*.jpeg
-*.gif
-
+~
 # Ignore arquivos de cache
 .cache/

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-22 06:36:49 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjI7IjA0OjU3OjQwICI7MjUxNg=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjI7IjA2OjM2OjQ5ICI7MTsyNjMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="AN, AA, IDA, ID2050" type="Real" array="False" size=""/>
+            <declare name="resp" type="String" array="False" size=""/>
+            <assign variable="AA" expression="2023"/>
+            <do expression="resp=&quot;sim&quot;">
+                <output expression="&quot;Digite o ano que vc nasceu&quot;" newline="True"/>
+                <input variable="AN"/>
+                <assign variable="IDA" expression="AA-AN"/>
+                <assign variable="ID2050" expression="2050-AN"/>
+                <output expression="&quot;Sua idade atual &#233;&quot;&amp;IDA" newline="True"/>
+                <output expression="&quot;Sua idade em 2050 ser&#225;  &quot;&amp;ID2050" newline="True"/>
+                <output expression="&quot;Deseja calcular novamente&quot;" newline="True"/>
+                <input variable="resp"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

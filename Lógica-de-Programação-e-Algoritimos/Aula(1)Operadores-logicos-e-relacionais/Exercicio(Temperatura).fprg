@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-18 06:02:47 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTg7IjA1OjUyOjA5ICI7MjUyMg=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTg7IjA2OjAyOjQ3ICI7MTsyNjI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Celsius, Fer" type="Real" array="False" size=""/>
+            <output expression="&quot;Qual &#233; a temperatura no E.U.A? :&quot;" newline="True"/>
+            <input variable="Fer"/>
+            <assign variable="Celsius" expression="(Fer-32)/1.8"/>
+            <output expression="&quot;Sua temperatura l&#225; no Brasil &#233; de :&quot; &amp;Celsius" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

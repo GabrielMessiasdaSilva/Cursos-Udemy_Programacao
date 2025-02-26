@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-19 04:19:14 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTk7IjA0OjA2OjM2ICI7MjUyMQ=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTk7IjA0OjE5OjE0ICI7MjsyNjMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nasc, atual, idade" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o ano atual&quot;" newline="True"/>
+            <input variable="atual"/>
+            <output expression="&quot;digite o ano de nascimento&quot;" newline="True"/>
+            <input variable="nasc"/>
+            <assign variable="idade" expression="atual-nasc"/>
+            <if expression="idade&gt;=18">
+                <then>
+                    <output expression="&quot;idade &quot; &amp;idade&amp; &quot; anos&quot;" newline="True"/>
+                    <output expression="&quot;APTO A TIRAR CARTEIRA DE MOTORISTA&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;idade &quot; &amp;idade&amp; &quot; anos&quot;" newline="True"/>
+                    <output expression="&quot;INAPTO A TIRAR CARTEIRA DE MOTORISTA&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

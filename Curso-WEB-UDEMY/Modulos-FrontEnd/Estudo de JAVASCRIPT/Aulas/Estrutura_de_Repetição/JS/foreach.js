@@ -11,4 +11,4 @@ ListaHeroisMarvel.forEach(function (valor, indice, array) {
 // uma função de callback
 
 
-document.write(ListaHeroisMarvel)
+console.log(ListaHeroisMarvel)

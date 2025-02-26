@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-19 03:54:28 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTk7IjAzOjM0OjQ5ICI7MjUyNQ=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTk7IjAzOjU0OjI4ICI7MjsyNjMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ano, nasc, idade" type="Integer" array="False" size=""/>
+            <output expression="&quot;em que ano estamos? :&quot;" newline="True"/>
+            <input variable="ano"/>
+            <output expression="&quot;em que ano vc nasceu? : &quot;" newline="True"/>
+            <input variable="nasc"/>
+            <assign variable="idade" expression="ano-nasc"/>
+            <output expression="&quot;em &quot; &amp;ano&amp; &quot; voce ter&#225; &quot; &amp;idade&amp;  &quot; anos&quot;" newline="True"/>
+            <if expression="idade&gt;=21">
+                <then>
+                    <output expression="&quot;e j&#225; ter&#225; atigindo a maior idade&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;vc ainda n&#227;o atingiu a maior idade&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

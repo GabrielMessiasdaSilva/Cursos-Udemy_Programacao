@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-24 08:45:56 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjQ7IjA4OjQyOjM1ICI7MjUyMA=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjQ7IjA4OjQ1OjU2ICI7MjsyNjM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="C1, C2" type="Integer" array="False" size=""/>
+            <for variable="C1" start="1" end="3" direction="inc" step="1">
+                <for variable="C2" start="1" end="3" direction="inc" step="1">
+                    <output expression="C1&amp;C2" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

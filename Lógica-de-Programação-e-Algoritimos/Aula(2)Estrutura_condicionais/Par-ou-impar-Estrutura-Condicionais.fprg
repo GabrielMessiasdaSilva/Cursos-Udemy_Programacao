@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-19 03:59:10 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTk7IjAzOjU0OjMxICI7MjUxOA=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMTk7IjAzOjU5OjEwICI7MjsyNjI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite um numero qualquer&quot;" newline="True"/>
+            <input variable="N"/>
+            <if expression="N%2=0">
+                <then>
+                    <output expression="&quot;o numero &quot; &amp;N&amp; &quot;  &#233; par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;o numero &quot; &amp;N&amp;  &quot;  &#233; impar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

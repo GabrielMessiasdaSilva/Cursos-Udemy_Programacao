@@ -1,2 +1,2 @@
 var x = Math.random()
-document.write(x)
+console.log(x)

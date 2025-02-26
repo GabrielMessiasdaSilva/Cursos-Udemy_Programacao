@@ -1,0 +1,9 @@
+var valor =20 
+        
+function incrementa(){
+console.log("estou dentro de uma função")
+
+
+}
+
+console.log(valor)

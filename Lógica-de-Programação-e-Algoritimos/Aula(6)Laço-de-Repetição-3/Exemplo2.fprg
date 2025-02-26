@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel 22"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-02-24 11:04:20 "/>
+        <attribute name="created" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjQ7IjEwOjU5OjU0ICI7MjUyMg=="/>
+        <attribute name="edited" value="R2FicmllbCAyMjtHQUJSSUVMOzIwMjMtMDItMjQ7IjExOjA0OjIwICI7MjsyNjE1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="C, N, S" type="Integer" array="False" size=""/>
+            <assign variable="S" expression="0"/>
+            <for variable="C" start="1" end="5" direction="inc" step="1">
+                <output expression="&quot;DIGITE UM VALOR&quot;" newline="True"/>
+                <input variable="N"/>
+                <assign variable="S" expression="S+N"/>
+            </for>
+            <output expression="&quot;A SOMA DESE VALORES &#201;&quot;&amp;S" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

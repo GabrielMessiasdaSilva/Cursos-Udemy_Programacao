@@ -4,16 +4,19 @@
 var data = new Date();
 
 // Exibe o dia atual do mês (formato: 1-31)
-document.write("Dia: " + data.getDate() + '</br>');
+console.log("Dia: " + data.getDate() + '</br>');
 
 // Exibe o mês atual (formato: 0-11, somar 1 para obter o mês correto)
-document.write("Mês: " + (data.getMonth() + 1) + '</br>');
+console.log("Mês: " + (data.getMonth() + 1) + '</br>');
 
 // Exibe o ano atual (formato: 4 dígitos)
-document.write("Ano: " + data.getFullYear() + '</br>');
+console.log("Ano: " + data.getFullYear() + '</br>');
 
 // Conectando tudo para exibir a data completa no formato DD/MM/AAAA
-document.write("Data completa: " + data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear());
+console.log("Data completa: " + data.getDate() + '/' + (data.getMonth() + 1) + '/' + data.getFullYear());
+
+
+console.log("Data e Hora "+data.getHours() + ':' +(data.getMinutes()) + ':' + data.getSeconds()+"s")
 
 // Métodos para obter informações específicas da data:
 // getFullYear() - Retorna o ano com 4 dígitos
