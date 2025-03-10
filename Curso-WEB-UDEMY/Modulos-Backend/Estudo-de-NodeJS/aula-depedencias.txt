@@ -1,0 +1,7 @@
+Explicação das dependências:
+
+express → Framework web para Node.js
+body-parser → Para processar requisições POST e capturar os dados do formulário
+sequelize → ORM para interagir com o MySQL
+mysql2 → Driver do MySQL para funcionar com o Sequelize
+express-handlebars → Para usar o Handlebars como template engine
