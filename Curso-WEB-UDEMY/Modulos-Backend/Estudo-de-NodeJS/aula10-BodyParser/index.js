@@ -31,7 +31,7 @@ app.get('/add', (req, res) => {
 
 // Rota para processar o formulário (método POST)
 app.post('/add', (req, res) => {
-    res.send(`Texto: ${req.body.titulo} | Conteúdo: ${req.body.conteudo}`);
+    res.send("titulo:  "+req.body.titulo +"</br>"+"  conteudo:   "+req.body.conteudo);
 });
 
 // Iniciando o servidor
