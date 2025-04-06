@@ -38,14 +38,5 @@ Este curso focou especificamente em JavaScript e TypeScript. Estou aprendendo de
 - Manipulação do DOM com JavaScript. 🖱
 - Desenvolvimento assíncrono com Promises e async/await. ⏳
 
-## Curso de Angular 16 do Básico ao Avançado + Projetos 🛠
-
-O Angular é um framework poderoso para construção de aplicações web. Neste curso, explorei desde os conceitos básicos até recursos avançados. Alguns dos tópicos incluíram:
-
-- Fundametos do Angular: Componentes, diretivas e serviços no Angular. 🧩
-- Roteamento e navegação entre páginas. 🗺
-- Consumo de APIs REST. 🍽
-- Formulários reativos. 📝
-- Autenticação e autorização. 🔐
 
 
